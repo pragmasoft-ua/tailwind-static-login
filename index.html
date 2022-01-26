@@ -1,26 +1,20 @@
 <!DOCTYPE html>
 <html lang="en" class="text-base md:text-xl xl:text-2xl">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="abler-logo.svg" />
-    <script type="module" src="/main.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sportabler login</title>
-  </head>
-  <body
-    class="min-h-screen flex flex-col justify-between text-gray-400 focus:text-gray-500"
-  >
-    <img src="./abler-logo.svg" alt="logo" class="w-20 h-20 mx-auto my-5" />
-    <main class="max-w-full sm:max-w-sm md:max-w-md mx-auto mb-10">
-      <h1 class="px-6 text-3xl text-gray-800">Welcome</h1>
-      <form
-        class="grid grid-cols-[2rem_1fr_1fr_2rem] gap-6 items-center auto-rows-max"
-      >
-        <input
-          type="email"
-          name="email"
-          required
-          class="
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="abler-logo.svg" />
+  <script type="module" src="/main.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sportabler login</title>
+</head>
+
+<body class="min-h-screen flex flex-col justify-between text-gray-400 focus:text-gray-500">
+  <img src="./abler-logo.svg" alt="logo" class="w-20 h-20 mx-auto my-5" />
+  <main class="max-w-full sm:max-w-sm md:max-w-md mx-auto mb-10">
+    <h1 class="px-6 text-3xl text-gray-800">Welcome</h1>
+    <form class="group grid grid-cols-[2rem_1fr_1fr_2rem] gap-4 items-center auto-rows-max">
+      <input type="email" name="email" required class="
             peer 
             row-start-1 
             col-span-full 
@@ -32,186 +26,114 @@
             valid:border-emerald-500 
             placeholder-shown:invalid:border-gray-300 
             placeholder-shown:valid:border-gray-300
+            placeholder-shown:focus:border-gray-800
             focus:text-gray-800
             focus:placeholder:text-gray-800
-            focus:font-medium"
-            
-          placeholder="Email"
-        />
+            focus:font-medium" placeholder="Email address" />
 
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          aria-hidden="true"
-          focusable="false"
-          data-icon="user"
-          role="img"
-          class="h-6 w-6 my-5 row-start-1 col-start-1 peer-focus:text-gray-800"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-          />
-        </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-icon="user" role="img"
+        class="h-6 w-6 my-5 row-start-1 col-start-1 peer-focus:text-gray-800" fill="none" viewBox="0 0 24 24"
+        stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+      </svg>
 
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          aria-hidden="true"
-          focusable="false"
-          data-icon="check"
-          role="img"
-          class="h-6 w-6 row-start-1 col-start-4 justify-self-end text-emerald-500 invisible peer-valid:visible"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M5 13l4 4L19 7"
-          />
-        </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-icon="check" role="img"
+        class="h-6 w-6 row-start-1 col-start-4 justify-self-end text-emerald-500 invisible peer-valid:visible"
+        fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+      </svg>
 
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          aria-hidden="true"
-          focusable="false"
-          data-icon="x"
-          role="img"
-          class="h-6 w-6 row-start-1 col-start-4 justify-self-end text-red-500 invisible peer-invalid:visible peer-placeholder-shown:peer-invalid:invisible"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M6 18L18 6M6 6l12 12"
-          />
-        </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-icon="x" role="img"
+        class="h-6 w-6 row-start-1 col-start-4 justify-self-end text-red-500 invisible peer-invalid:visible peer-placeholder-shown:peer-invalid:invisible"
+        fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      </svg>
 
+      <input type="password" name="password" required minlength="6" class="
+            row-start-2 
+            col-span-full 
+            px-8 py-4
+            outline-none 
+            border-b-2
+            border-gray-300 
+            invalid:border-red-500 
+            valid:border-emerald-500 
+            placeholder-shown:invalid:border-gray-300 
+            placeholder-shown:valid:border-gray-300
+            placeholder-shown:focus:border-gray-800
+            focus:text-gray-800
+            focus:placeholder:text-gray-800
+            focus:font-medium" placeholder="Password" />
 
-        <input
-          type="password"
-          name="password"
-          required
-          minlength="6"
-          class="row-start-2 col-span-full px-8 outline-none border-b-2 border-gray-400 focus:border-gray-500 focus:valid:border-emerald-500 focus:invalid:border-red-500"
-          placeholder="Password"
-        />
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          aria-hidden="true"
-          focusable="false"
-          data-icon="lock-closed"
-          role="img"
-          class="row-start-3 col-start-1 h-6 w-6"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
-          />
-        </svg>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          aria-hidden="true"
-          focusable="false"
-          data-icon="lock-opened"
-          role="img"
-          class="h-6 w-6"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M8 11V7a4 4 0 118 0m-4 8v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2z"
-          />
-        </svg>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          aria-hidden="true"
-          focusable="false"
-          data-icon="eye"
-          role="img"
-          class="h-6 w-6"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-          />
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
-          />
-        </svg>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          aria-hidden="true"
-          focusable="false"
-          data-icon="eye-off"
-          role="img"
-          class="h-6 w-6"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21"
-          />
-        </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-icon="lock-closed" role="img"
+        class="h-6 w-6 row-start-2 col-start-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+      </svg>
 
-        <a href="#">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true"
-            focusable="false"
-            data-icon="exclamation-circle"
-            role="img"
-            class="h-6 w-6 inline-block"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-            />
-          </svg>
-          Forgot password
-        </a>
-        <button
-          class="disabled:border disabled:border-gray-400 disabled:text-gray-400 disabled:bg-transparent text-white bg-emerald-500 rounded-full px-6 py-1 w-fit"
-        >
-          Log in
-        </button>
-      </form>
-    </main>
-    <footer class="bg-[#f5f5f5] p-5 flex">footer</footer>
-  </body>
+      <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-icon="lock-opened" role="img"
+        class="h-6 w-6 row-start-2 col-start-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M8 11V7a4 4 0 118 0m-4 8v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2z" />
+      </svg>
+
+      <svg xmlns="http://www.w3.org/2000/svg" data-icon="eye" role="button"
+        class="h-6 w-6 row-start-2 col-start-4 justify-self-end cursor-pointer" fill="none" viewBox="0 0 24 24"
+        stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" data-icon="eye-off" role="button"
+        class="h-6 w-6 row-start-2 col-start-4 justify-self-end cursor-pointer" fill="none" viewBox="0 0 24 24"
+        stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21" />
+      </svg>
+
+      <a href="#" class="col-span-2 hover:text-gray-500">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-icon="exclamation-circle"
+          role="img" class="h-6 w-6 inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+        Forgot password
+      </a>
+      <button class="
+          col-span-2 
+          justify-self-end 
+          group-invalid:border 
+          group-invalid:border-gray-400 
+          group-invalid:text-gray-400 
+          group-invalid:bg-transparent 
+          text-white 
+          bg-emerald-500 
+          rounded-full 
+          px-6 py-2 
+          w-fit">
+        Log in
+      </button>
+    </form>
+  </main>
+  <footer class="bg-[#f5f5f5] p-5 flex justify-between">
+    <div class="w-8 h-8 rounded-full bg-white border border-gray-300 p-1 cursor-pointer group">
+      <svg xmlns="http://www.w3.org/2000/svg" class="group-hover:text-gray-500" fill="none" viewBox="0 0 24 24"
+        stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+      </svg>
+    </div>
+    <a href="#" class=" hover:text-gray-500">
+      New user
+      <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-icon="user-add" role="img"
+        class="h-6 w-6 inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z" />
+      </svg>
+    </a>
+
+  </footer>
+</body>
+
 </html>

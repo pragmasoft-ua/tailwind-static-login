@@ -2,6 +2,25 @@
 
 Static html Implementation of the design below
 
-![Mock](abler-login-mock.png)
+![Design](abler-login-mock.png)
 
 Uses vite, tailwindcss
+
+## To develop
+
+`npm i`
+
+then 
+
+`npm run dev`
+
+## To build production
+
+`npm run build`
+
+## TODO
+
+Add linter, prettier
+Retry button
+HTML Minifier
+
